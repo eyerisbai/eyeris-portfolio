@@ -1,0 +1,259 @@
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding:0;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    color:blue;
+    font-size: 50px;
+    font-weight:700;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    font-family: 'Rubik';
+    padding: 30px 30px;
+    background-color: #4a4aff;
+    color:#f7f7f7;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+    font-family: "Josefin Sans";
+    font-size: 15px; 
+}
+nav {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    z-index: 100;
+    margin-top: 20px;
+    margin: 0 15px;
+    color: #6a39ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+ nav a {
+    color: #6a39ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+ }
+
+ nav a:hover {
+    color: #2a2ad6;
+ }
+
+@media (max-with: 600px) {
+    header hl {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #8A7F6F;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #4a4aff;
+}
+
+.project-card p {
+    margin-bottom: 0;
+    color: #333;
+}
+
+.project-card img {
+    object-fit:cover;
+    width: auto;
+    height: 300px; 
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+.image-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.image-scroll img {
+    padding-top: 10px;
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 15px;
+}
+
+.tag {
+    background-color: #eef0ff;
+    color: #4a4aff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-header h3 {
+    margin-bottom: 5px;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color:#4a4aff;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, trasnform 0.2s ease;
+}
+
+.project-btn hover {
+    background-color: #3737d6;
+    transform: translateY(-2px);
+}
+
+#contact {
+    text-align: center;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50%;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 10px 16px;
+    background-color: #4a4aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3737d6;
+    transform: translateY(-2px);
+}
+
+.year-folder {
+    border: 2px solid #4a4aff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    transition: background-color -.2s ease;
+}
+
+.folder-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    cursor: pointer;
+} 
+
+.folder-header:hover {
+    background-color: #ececff;
+}
+
+.folder-icon {
+    font-size: 24px;
+}
+
+.year-content {
+    display:none;
+    padding: 20px;
+    border-top: 1px solid #dcdcff;
+}
