@@ -19,6 +19,7 @@ body {
 
 h1 {
     color: var(--iris-white);
+    text-align: center;
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
     font-weight:700;
@@ -30,6 +31,8 @@ h2 {
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 10px;
+    font-family:'Courier New', Courier, monospace;
+    color: var(--iris-yellow);
 }
 
 p {
@@ -45,6 +48,7 @@ nav {
     margin-top: 20px;
     margin: 0 15px;
     color: var(--iris-white);
+    font-family:'Courier New', Courier, monospace;
     text-decoration: none;
     font-weight: bold;
 }
