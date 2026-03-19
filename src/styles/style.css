@@ -1,3 +1,11 @@
+:root {
+  --iris-purple: #4B2E83;
+  --iris-lavender: #C7A4FF;
+  --iris-yellow: #F2C94C;
+  --iris-green: #6BAA75;
+  --iris-white: #F7F7FA;
+  --iris-charcoal: #1E1E1E;
+}
 
 body {
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -6,11 +14,12 @@ body {
     color: #333;
     margin: 0;
     padding:0;
-    background-color: #f7f7f7;
+    background-color: var(--iris-charcoal);
 }
 
 h1 {
-    color:blue;
+    color: var(--iris-white);
+    font-family:'Courier New', Courier, monospace;
     font-size: 50px;
     font-weight:700;
     margin-bottom: 10px;
@@ -21,26 +30,6 @@ h2 {
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 10px;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-    font-family: 'Rubik';
-    padding: 30px 30px;
-    background-color: #4a4aff;
-    color:#f7f7f7;
-}
-
-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 p {
@@ -55,23 +44,24 @@ nav {
     z-index: 100;
     margin-top: 20px;
     margin: 0 15px;
-    color: #6a39ff;
+    color: var(--iris-white);
     text-decoration: none;
     font-weight: bold;
 }
  nav a {
-    color: #6a39ff;
+    color: var(--iris-white);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease, transform 0.2s ease;
  }
 
  nav a:hover {
-    color: #2a2ad6;
+    color: var(--iris-yellow);
+    transform: translateY(-5px);
  }
 
-@media (max-with: 600px) {
-    header hl {
+@media (max-width: 600px) {
+    header h1 {
         font-size: 32px;
     }
 
@@ -90,9 +80,30 @@ nav {
     }
 }
 
+.about-me {
+    text-align: center;
+    background-color: var(--iris-green);
+    color: var(--iris-white);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skills {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background:var(--iris-green);
+    color: var(--iris-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 footer {
     text-align: center;
-    background-color: #8A7F6F;
+    background-color: var(--iris-charcoal);
 }
 img {
     max-width: 100%;
@@ -256,4 +267,27 @@ img {
     display:none;
     padding: 20px;
     border-top: 1px solid #dcdcff;
+}
+
+.hero {
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(135deg, var(--iris-purple), var(--iris-lavender));
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 200;
 }
